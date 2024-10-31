@@ -1,0 +1,97 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,auto);
+    grid-template-areas: 
+                        "header"
+                        "navbar"
+                        "footer";
+}
+
+header{
+    grid-area: header;
+    text-align: center;
+    padding: 3px;
+    background-color: #8a8a8a;
+}
+.navbar{
+    grid-area: navbar;
+}
+.navbar ul{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d5ffe9;
+    padding:  15px;
+}
+
+/*cuerpo y contenido*/
+
+.post-header h3{
+    font-size: 30px;
+    margin: 10px 0px;
+}
+.post-header p{
+    margin: 10px 0px;
+}
+.post-header img{
+    width: 80%;
+    height: auto;
+}
+.post-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+.post-body{
+    text-align: justify;
+    padding: 5px 8px;
+}
+#post-uno table{
+    text-align: justify;
+    display: flex;
+    justify-content: center;
+    margin: 15px 0px;
+}
+#post-uno td,th{
+    border: 3px solid black;
+    padding: 5px;
+}
+
+
+/*post 2*/
+#post-dos td{
+    transition: transform 0.5s, text-shadow 0.8s;
+}
+#post-dos td:hover{
+    transform: scale(1.05);
+}
+
+#post-dos table{
+    display: flex;
+    justify-content: center;
+}
+#post-dos th,td{
+    padding: 5px 20px;
+}
+
+
+footer h4{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 15px;
+}
+footer fieldset{
+    background-color: #8a8a8a;
+    display: flex;
+    flex-direction: column;
+    display: grid;
+    gap: 20px;
+}
